@@ -1,0 +1,12 @@
+$Hero-image-height: 300px;
+
+.Hero {
+  display: block;
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+.Hero-image {
+  height: $Hero-image-height;
+}
