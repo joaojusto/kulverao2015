@@ -1,0 +1,12 @@
+.MapWrapper {
+  padding-top: $Theme-default-spacing * 4;
+  height: 400px;
+}
+
+.MapWrapper-map {
+  position: absolute;
+  left: 0;
+
+  width: 100vw;
+  height: 400px;
+}

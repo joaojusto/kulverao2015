@@ -1,0 +1,12 @@
+.Lineup {
+  padding-top: $Theme-default-spacing * 2;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Lineup-day {
+  text-align: center;
+  color: $Theme-color-white;
+}

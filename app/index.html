@@ -29,6 +29,8 @@
 
     <div class="MainLayout-body">
       @@include('./views/hero.html')
+      @@include('./views/lineup.html')
+      @@include('./views/map.html')
     </div>
 
     @@include('./views/footer.html')
@@ -43,6 +45,11 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
+    <!-- Google Maps -->
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4vkw-VKD0gT69TijQXjyo1DDtIABl-S0">
+    </script>
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <!-- endbower -->
@@ -50,7 +57,7 @@
 
     <!-- build:js scripts/plugins.js -->
     <!-- endbuild -->
-
+    <script src="scripts/maps.js"></script>
     <!-- build:js scripts/main.js -->
     <!-- endbuild -->
 </body>
