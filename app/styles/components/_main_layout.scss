@@ -11,14 +11,6 @@
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,$Theme-color-primary), color-stop(98%,$Theme-color-secondary)); /* Chrome,Safari4+ */
 }
 
-.MainLayout-header {
-  height: $Theme-header-height;
-}
-
 .MainLayout-body {
   height: 100vh;
-}
-
-.MainLayout-footer {
-  height: $Theme-footer-height;
 }

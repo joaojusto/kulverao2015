@@ -24,18 +24,14 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header class="MainLayout-header">
-    </header>
+
+    @@include('./views/header.html')
 
     <div class="MainLayout-body">
-      <div class="Hero">
-        <img src="./images/logo_alt.png" class="Hero-image">
-      </div>
+      @@include('./views/hero.html')
     </div>
 
-    <footer class="MainLayout-footer">
-      ©Kuljovem 2015 | Kultiva a amizade
-    </footer>
+    @@include('./views/footer.html')
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

@@ -1,10 +1,14 @@
-/*global -$ */
-'use strict';
+/*global -$, require, console */
+'use strict'; // jshint ignore:line
 // generated on 2015-06-14 using generator-gulp-webapp 0.3.0
 var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
+var fileinclude = require('gulp-file-include');
+
+var $ = require('gulp-load-plugins')();
+
 var reload = browserSync.reload;
+var includeOptions = { prefix: '@@', basepath: './app/' };
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
@@ -31,10 +35,16 @@ gulp.task('jshint', function () {
     .pipe($.if(!browserSync.active, $.jshint.reporter('fail')));
 });
 
-gulp.task('html', ['styles'], function () {
+gulp.task('include', function() {
+  return gulp.src('app/*.html')
+    .pipe(fileinclude(includeOptions))
+    .pipe(gulp.dest('.tmp'));
+});
+
+gulp.task('html', ['styles', 'include'], function () {
   var assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
 
-  return gulp.src('app/*.html')
+  return gulp.src('.tmp/*.html')
     .pipe(assets)
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.csso()))
@@ -75,7 +85,7 @@ gulp.task('extras', function () {
 
 gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['styles', 'fonts'], function () {
+gulp.task('serve', ['styles', 'fonts', 'include'], function () {
   browserSync({
     notify: false,
     port: 9000,
@@ -92,9 +102,11 @@ gulp.task('serve', ['styles', 'fonts'], function () {
     'app/*.html',
     'app/scripts/**/*.js',
     'app/images/**/*',
-    '.tmp/fonts/**/*'
+    '.tmp/fonts/**/*',
+    '.tmp/*.html'
   ]).on('change', reload);
 
+  gulp.watch('app/**/*.html', ['include']);
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
