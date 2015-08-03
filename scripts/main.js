@@ -1,1 +1,1 @@
-console.log("'Allo 'Allo!");
+!function(){"use strict";function e(){var e={lat:40.99834,lng:-8.171281},o={zoom:16,center:e,scrollwheel:!1,mapTypeId:google.maps.MapTypeId.HYBRID};return new google.maps.Map(document.getElementById("Map"),o)}google.maps.event.addDomListener(window,"load",e)}();
