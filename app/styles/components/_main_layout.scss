@@ -13,4 +13,8 @@
   padding: $Theme-default-spacing 0;
   max-width: 980px;
   margin: 0 auto;
+
+  @media(max-width: 600px) {
+    padding: $Theme-default-spacing / 2 0;
+  }
 }

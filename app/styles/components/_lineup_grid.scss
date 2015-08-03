@@ -4,6 +4,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
+
+  @media(max-width: 600px) {
+    padding-top: $Theme-default-spacing / 2;
+  }
 }
 
 .Lineup-day {
@@ -11,22 +16,40 @@
   text-align: center;
   color: $Theme-color-white;
   text-transform: uppercase;
+
+  @media(max-width: 600px) {
+    width: 120px;
+    margin-bottom: 20px;
+  }
 }
 
 .Lineup-date {
   text-align: center;
   font-size: 16px;
+
+  @media(max-width: 600px) {
+    font-size: 10px;
+  }
 }
 
 .Lineup-dash {
   width: 40px;
   margin: 20px auto;
   border-bottom: 2px solid rgba(255, 255, 255, .5);
+
+  @media(max-width: 600px) {
+    margin: 5px auto;
+  }
 }
 
 .Lineup-image {
   height: 75px;
   border-radius: 50%;
+
+  @media(max-width: 600px) {
+    height: 50px;
+    padding: 5px 0;
+  }
 }
 
 .Lineup-artist {
@@ -34,4 +57,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media(max-width: 600px) {
+    font-size: 10px;
+    height: 10px;
+    margin: 0 0 20px;
+  }
 }

@@ -1,4 +1,5 @@
 $Hero-image-height: 230px;
+$Hero-image-small-height: 90px;
 
 .Hero {
   display: block;
@@ -9,6 +10,10 @@ $Hero-image-height: 230px;
 
 .Hero-image {
   height: $Hero-image-height;
+
+  @media(max-width: 600px) {
+    height: $Hero-image-small-height;
+  }
 }
 
 .Hero-cta {
@@ -18,6 +23,11 @@ $Hero-image-height: 230px;
   margin-top: $Theme-default-spacing;
   text-transform: uppercase;
   font-size: 14px;
+  flex-wrap: wrap;
+
+  @media(max-width: 600px) {
+    display: none;
+  }
 }
 
 .Hero-button {
@@ -31,7 +41,6 @@ $Hero-image-height: 230px;
   cursor: pointer;
   text-decoration: none;
   border-radius: 5px;
-
 
   &:hover {
     background: darken(#EDC951, 10);

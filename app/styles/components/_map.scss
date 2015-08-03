@@ -1,16 +1,29 @@
 .MapWrapper {
   padding: $Theme-default-spacing 0;
   height: 400px;
+
+  @media(max-width: 600px) {
+    padding: 0;
+  }
 }
 
 .MapWrapper-title {
   color: $Theme-color-white;
   text-align: center;
   padding: $Theme-default-spacing;
+
+  @media(max-width: 600px) {
+    padding: 0;
+  }
 }
 
 .MapWrapper-information {
   color: $Theme-color-white;
+  padding-bottom: $Theme-default-spacing;
+
+  @media(max-width: 600px) {
+    padding: $Theme-default-spacing / 4;
+  }
 }
 
 .MapWrapper-map {

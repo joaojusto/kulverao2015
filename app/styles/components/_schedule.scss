@@ -1,5 +1,9 @@
 .Schedule {
   padding-top: $Theme-default-spacing * 6;
+
+  @media(max-width: 600px) {
+    padding-top: $Theme-default-spacing * 4;
+  }
 }
 
 .Schedule-grid {
