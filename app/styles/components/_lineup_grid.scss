@@ -1,5 +1,5 @@
 .Lineup {
-  padding-top: $Theme-default-spacing * 2;
+  padding-top: $Theme-default-spacing;
 
   display: flex;
   flex-direction: row;
@@ -7,10 +7,20 @@
 }
 
 .Lineup-day {
+  max-width: 130px;
   text-align: center;
   color: $Theme-color-white;
+  text-transform: uppercase;
 }
 
 .Lineup-image {
+  height: 75px;
   border-radius: 50%;
+}
+
+.Lineup-artist {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
