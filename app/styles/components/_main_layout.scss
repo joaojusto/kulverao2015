@@ -1,12 +1,12 @@
 .MainLayout {
   background: $Theme-color-primary; /* Old browsers */
-  background: -o-linear-gradient(top, $Theme-color-primary 50%,$Theme-color-secondary 98%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, $Theme-color-primary 50%,$Theme-color-secondary 98%); /* IE10+ */
-  background: linear-gradient(to bottom, $Theme-color-primary 50%,$Theme-color-secondary 98%); /* W3C */
-  background: -moz-linear-gradient(top, $Theme-color-primary 50%, $Theme-color-secondary 98%); /* FF3.6+ */
-  background: -webkit-linear-gradient(top, $Theme-color-primary 50%,$Theme-color-secondary 98%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $Theme-color-primary 30%,$Theme-color-secondary 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $Theme-color-primary 30%,$Theme-color-secondary 100%); /* IE10+ */
+  background: linear-gradient(to bottom, $Theme-color-primary 30%,$Theme-color-secondary 100%); /* W3C */
+  background: -moz-linear-gradient(top, $Theme-color-primary 30%, $Theme-color-secondary 100%); /* FF3.6+ */
+  background: -webkit-linear-gradient(top, $Theme-color-primary 30%,$Theme-color-secondary 100%); /* Chrome10+,Safari5.1+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66b3aa', endColorstr='#c19a4a',GradientType=0 ); /* IE6-9 */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,$Theme-color-primary), color-stop(98%,$Theme-color-secondary)); /* Chrome,Safari4+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,$Theme-color-primary), color-stop(100%,$Theme-color-secondary)); /* Chrome,Safari4+ */
 }
 
 .MainLayout-body {
