@@ -1,7 +1,4 @@
 .MainLayout {
-  padding: $Theme-default-spacing / 2;
-  padding-bottom: 0;
-
   background: $Theme-color-primary; /* Old browsers */
   background: -o-linear-gradient(top, $Theme-color-primary 50%,$Theme-color-secondary 98%); /* Opera 11.10+ */
   background: -ms-linear-gradient(top, $Theme-color-primary 50%,$Theme-color-secondary 98%); /* IE10+ */
@@ -13,6 +10,7 @@
 }
 
 .MainLayout-body {
+  padding: $Theme-default-spacing 0;
   max-width: 900px;
   margin: 0 auto;
 }
