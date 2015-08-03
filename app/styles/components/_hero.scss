@@ -8,6 +8,16 @@ $Hero-image-small-height: 120px;
   margin: 0 auto;
 }
 
+.Hero-promo {
+  top: 0;
+  right: 0;
+  position: absolute;
+  color: $Theme-color-white;
+  margin: 0;
+  padding: $Theme-default-spacing $Theme-default-spacing / 2 0;
+  text-transform: uppercase
+}
+
 .Hero-image {
   height: $Hero-image-height;
 
@@ -20,7 +30,7 @@ $Hero-image-small-height: 120px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: $Theme-default-spacing;
+  padding-top: $Theme-default-spacing;
   text-transform: uppercase;
   font-size: 14px;
   flex-wrap: wrap;
