@@ -1,5 +1,5 @@
 $Hero-image-height: 230px;
-$Hero-image-small-height: 90px;
+$Hero-image-small-height: 120px;
 
 .Hero {
   display: block;
@@ -11,7 +11,7 @@ $Hero-image-small-height: 90px;
 .Hero-image {
   height: $Hero-image-height;
 
-  @media(max-width: 600px) {
+  @media(max-width: 780px) {
     height: $Hero-image-small-height;
   }
 }
@@ -25,7 +25,7 @@ $Hero-image-small-height: 90px;
   font-size: 14px;
   flex-wrap: wrap;
 
-  @media(max-width: 600px) {
+  @media(max-width: 780px) {
     display: none;
   }
 }

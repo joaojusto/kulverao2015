@@ -1,7 +1,7 @@
 .Schedule {
   padding-top: $Theme-default-spacing * 6;
 
-  @media(max-width: 600px) {
+  @media(max-width: 780px) {
     padding-top: $Theme-default-spacing * 4;
   }
 }

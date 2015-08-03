@@ -2,7 +2,7 @@
   padding: $Theme-default-spacing 0;
   height: 400px;
 
-  @media(max-width: 600px) {
+  @media(max-width: 780px) {
     padding: 0;
   }
 }
@@ -12,7 +12,7 @@
   text-align: center;
   padding: $Theme-default-spacing;
 
-  @media(max-width: 600px) {
+  @media(max-width: 780px) {
     padding: 0;
   }
 }
@@ -21,7 +21,7 @@
   color: $Theme-color-white;
   padding-bottom: $Theme-default-spacing;
 
-  @media(max-width: 600px) {
+  @media(max-width: 780px) {
     padding: $Theme-default-spacing / 4;
   }
 }
