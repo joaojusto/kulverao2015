@@ -17,7 +17,7 @@
       size: new google.maps.Size(120, 64)
     };
 
-    var beachMarker = new google.maps.Marker({
+    new google.maps.Marker({
         position: position,
         map: map,
         icon: logo
