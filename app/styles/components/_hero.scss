@@ -15,7 +15,11 @@ $Hero-image-small-height: 120px;
   color: $Theme-color-white;
   margin: 0;
   padding: $Theme-default-spacing $Theme-default-spacing / 2 0;
-  text-transform: uppercase
+  text-transform: uppercase;
+
+  @media(max-width: 780px) {
+    display: none;
+  }
 }
 
 .Hero-image {
