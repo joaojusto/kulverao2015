@@ -10,3 +10,26 @@ $Hero-image-height: 180px;
 .Hero-image {
   height: $Hero-image-height;
 }
+
+.Hero-cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: $Theme-default-spacing;
+}
+
+.Hero-button {
+  margin: $Theme-default-spacing;
+  display: block;
+  color: $Theme-color-white;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  background: $Theme-color-secondary;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background: darken($Theme-color-secondary, 20);
+  }
+}
