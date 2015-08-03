@@ -10,7 +10,7 @@
       mapTypeId: google.maps.MapTypeId.HYBRID
     };
 
-    var map = new google.maps.Map(document.getElementById('Map'), mapOptions);
+    return new google.maps.Map(document.getElementById('Map'), mapOptions);
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);
