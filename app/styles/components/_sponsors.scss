@@ -7,7 +7,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-
+  flex-wrap: wrap;
   margin-top: $Theme-default-spacing;
 }
 
@@ -22,9 +22,5 @@
 
 .Sponsors-day {
   max-width: 125px;
-  margin: 0 $Theme-half-spacing;
-}
-
-.Sponsors-cityhall {
-
+  margin: $Theme-half-spacing / 2;
 }
