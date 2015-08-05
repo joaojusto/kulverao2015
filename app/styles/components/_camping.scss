@@ -1,0 +1,21 @@
+.Camping {
+  margin-top: $Theme-default-spacing * 2;
+}
+
+.Camping-title {
+  text-align: center;
+  color: $Theme-color-white;
+}
+
+.Camping-text {
+  margin: $Theme-default-spacing auto;
+  line-height: 28px;
+  max-width: 600px;
+  color: $Theme-color-white;
+}
+
+.Camping-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+}

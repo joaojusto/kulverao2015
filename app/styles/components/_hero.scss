@@ -2,22 +2,19 @@ $Hero-image-height: 230px;
 $Hero-image-small-height: 120px;
 
 .Hero {
-  display: block;
-  text-align: center;
-
   margin: 0 auto;
+  display: block;
+
+  text-align: center;
 }
 
 .Hero-promo {
-  top: 0;
-  right: 0;
-  position: absolute;
+  padding: $Theme-half-spacing;
+
   color: $Theme-color-white;
-  margin: 0;
-  padding: $Theme-default-spacing $Theme-default-spacing / 2 0;
   text-transform: uppercase;
 
-  @media(max-width: 780px) {
+  @media(max-width: $Theme-breakpoint-mobile) {
     display: none;
   }
 }
@@ -25,7 +22,7 @@ $Hero-image-small-height: 120px;
 .Hero-image {
   height: $Hero-image-height;
 
-  @media(max-width: 780px) {
+  @media(max-width: $Theme-breakpoint-mobile) {
     height: $Hero-image-small-height;
   }
 }
@@ -34,7 +31,6 @@ $Hero-image-small-height: 120px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: $Theme-default-spacing;
   text-transform: uppercase;
   font-size: 14px;
   flex-wrap: wrap;
@@ -45,7 +41,7 @@ $Hero-image-small-height: 120px;
 }
 
 .Hero-button {
-  margin: $Theme-default-spacing;
+  margin: $Theme-half-spacing;
   display: block;
   color: $Theme-color-white;
   width: 150px;

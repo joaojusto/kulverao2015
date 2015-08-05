@@ -1,0 +1,30 @@
+.Sponsors {
+  margin-top: $Theme-default-spacing * 2;
+}
+
+.Sponsors-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-top: $Theme-default-spacing;
+}
+
+.Sponsors-title {
+  text-align: center;
+  color: $Theme-color-white;
+}
+
+.Sponsors-main {
+  max-width: 300px;
+}
+
+.Sponsors-day {
+  max-width: 125px;
+  margin: 0 $Theme-half-spacing;
+}
+
+.Sponsors-cityhall {
+
+}

@@ -1,32 +1,36 @@
-.MapWrapper {
-  padding: $Theme-default-spacing 0;
-  height: 400px;
+$map-height: 400px;
 
-  @media(max-width: 780px) {
+.MapWrapper {
+  height: $map-height;
+  padding: $Theme-default-spacing 0;
+
+  @media(max-width: $Theme-breakpoint-mobile) {
     padding: 0;
   }
 }
 
 .MapWrapper-title {
-  color: $Theme-color-white;
-  text-align: center;
   padding: $Theme-default-spacing;
 
-  @media(max-width: 780px) {
+  text-align: center;
+  color: $Theme-color-white;
+
+  @media(max-width: $Theme-breakpoint-mobile) {
     padding: 0;
   }
 }
 
 .MapWrapper-information {
-  color: $Theme-color-white;
-  text-align: center;
   padding-bottom: $Theme-default-spacing;
 
-  @media(max-width: 780px) {
-    padding: $Theme-default-spacing / 4;
+  text-align: center;
+  color: $Theme-color-white;
+
+  @media(max-width: $Theme-breakpoint-mobile) {
+    padding: $Theme-small-spacing;
   }
 }
 
 .MapWrapper-map {
-  height: 400px;
+  height: $map-height;
 }
