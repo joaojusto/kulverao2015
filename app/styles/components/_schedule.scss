@@ -1,8 +1,8 @@
 .Schedule {
-  padding-top: $Theme-default-spacing * 6;
+  padding-top: $Theme-default-spacing * 2;
 
   @media(max-width: 780px) {
-    padding-top: $Theme-default-spacing * 4;
+    padding-top: $Theme-default-spacing;
   }
 }
 
@@ -18,8 +18,7 @@
 .Schedule-day {
   width: 230px;
   text-align: left;
-  font-size: 14px;
-  text-transform: uppercase;
+  font-size: 16px;
   text-align: center;
   margin: $Theme-default-spacing / 2 0;
 }

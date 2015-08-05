@@ -16,7 +16,6 @@
   max-width: 130px;
   text-align: center;
   color: $Theme-color-white;
-  text-transform: uppercase;
 
   @media(max-width: 780px) {
     width: 100%;
@@ -26,7 +25,7 @@
 
 .Lineup-date {
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
 
   @media(max-width: 780px) {
     display: none;
@@ -46,6 +45,7 @@
 .Lineup-image {
   height: 75px;
   border-radius: 50%;
+  margin: 0 0 20px;
 
   @media(max-width: 780px) {
     height: 50px;
@@ -54,14 +54,14 @@
 }
 
 .Lineup-artist {
-  height: 50px;
+  margin: 0 0 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-transform: uppercase;
 
   @media(max-width: 780px) {
     font-size: 16px;
-    height: 30px;
-    margin: 0 0 20px;
+    margin: 20px 0 20px;
   }
 }
