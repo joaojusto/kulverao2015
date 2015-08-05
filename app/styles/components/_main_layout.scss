@@ -7,6 +7,7 @@
   background: -webkit-linear-gradient(top, $Theme-color-primary 30%,$Theme-color-secondary 100%); /* Chrome10+,Safari5.1+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66b3aa', endColorstr='#c19a4a',GradientType=0 ); /* IE6-9 */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,$Theme-color-primary), color-stop(100%,$Theme-color-secondary)); /* Chrome,Safari4+ */
+  background-attachment: fixed;
 }
 
 .MainLayout-body {
